@@ -12,66 +12,71 @@
     <title> Big footer </title>
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-gray-100 h-[100vh]">
 
-    <main class="bg-white w-[1080px] h-[580px] rounded-lg shadow-md mx-auto my-auto mt-[4%] mb-[4%]">
-        <section class="flex justify-between pt-[50px] px-[51px]">
-            <div class="flex h-[260px] w-[370px] rounded-md shadow-md bg-gray-100">
-                <img class=" w-[120px] my-auto ml-[10px] mr-[10px]" src="./images/jar.png " alt="buterfly-jar">
-                <div class="flex-col justify-between pt-[27px] pr-[10px]">
-                    <h2 class="text-[19px] text-black font-[700] pb-[18px]">Do you have designs to spare?</h2>
-                    <p class="text-[14px] pb-[24px]">Donate the design and contribute to the community</p>
-                    <button class="text-white bg-purple-900 px-6 py-3 rounded-md">Donate now!</button>
-                </div>
-            </div>
-
+    <main class="w-[770px] h-[500px] mt-14 mx-auto">
+        <div class=" relative top-[100px] left-[70px] flex">
             <div>
-                <ul class="space-y-[20px] ">
-                    <li class="text-pink-400 font-bold">Explore</li>
-                    <li class="text-gray-500 font-bold hover:text-purple-900">Free projects</li>
-                    <li class="text-gray-500 font-bold hover:text-purple-900">Latest projects</li>
-                    <li class="text-gray-500 font-bold hover:text-purple-900">Most popular projects</li>
-                    <li class="text-gray-500 hover:text-purple-900 font-bold">Contributor</li>
-                </ul>
-            </div>
-            <div>
-                <ul class="space-y-[20px] ">
-                    <li class="text-pink-400 font-bold">Sites</li>
-                    <li class="text-gray-500 font-bold hover:text-purple-900">Lisence</li>
-                    <li class="text-gray-500 font-bold hover:text-purple-900">Articles</li>
-                    <li class="text-gray-500 font-bold hover:text-purple-900">About</li>
-                    <li class="text-gray-500 hover:text-purple-900 font-bold">Support</li>
-                    <li class="text-gray-500 hover:text-purple-900 font-bold">Sponsor</li>
-                </ul>
-            </div>
-
-            <div class="space-y-[20px] ">
-                <h3 class="text-pink-400 font-bold">Follow us</h3>
-                <ul class="flex space-x-5">
-                    <li class="text-[27px]  text-gray-500"><i class="fa-solid fa-basketball "></i></li>
-                    <li class="text-[27px] text-gray-500"><i class="fa-brands fa-twitter"></i></li>
-                    <li class="text-[27px] text-gray-500"><i class="fa-brands fa-instagram"></i></li>
-                </ul>
-                <div class="bg-gray-100 rounded-full ">
-                    <div class="flex py-[13px] px-[11px] mt-[35px]">
-                        <img src="./images/slack-logo.png " class="w-[40px] mr-[11px]" alt="">
-                        <p class="w-[97px] text-[13px] font-[600] ">join our slack channel</p>
+                <div class="flex w-[300px] justify-between relative left-10">
+                    <div class="w-[70px] h-[70px] bg-white shadow-md rounded-full">
+                        <i class="fa-solid fa-book text-[31px] relative top-[20px] text-blue-900 left-[20px]"></i>
+                        <span class="relative top-12 left-[5px] font-[700]"> History</span>
                     </div>
+                    <div class="w-[70px] h-[70px] bg-white shadow-md rounded-full">
+                        <i class="fa-solid fa-award text-[31px] relative top-[20px] text-blue-900 left-[23px]"></i>
+                        <span class="relative top-12 left-[5px] font-[700]">Awards</span>
+                    </div>
+                    <div class="w-[70px] h-[70px] bg-white shadow-md rounded-full">
+                        <i class="fa-solid fa-lightbulb text-[31px] relative top-[20px] text-blue-900 left-[23px]"></i>
+                        <span class="relative top-[4.5rem] right-[10px] font-[700]">Ideas</span>
+                    </div>
+
+                </div>
+                <div class="relative  top-[80px]">
+                    <input type="text" name="" id="" placeholder=" search"
+                        class="border-black  pl-[60px] text-lg font-[600] shadow-inner  bg-slate-200 rounded-full h-[50px] w-[420px]">
+                    <i class="fa-solid fa-search text-[31px] relative  right-[410px] top-[5px] text-gray-400 "></i>
+                    <button class="bg-white mb-[5px] text black px-[17px] py-[9px] rounded-full relative bottom-[2px] right-[124px]">search</button>
                 </div>
             </div>
-        </section>
-        <section class="w-[90%] mx-auto shadow-inner bg-gray-100 mt-[30px]  ">
-            <i class="fa-solid  fa-rectangle-ad text-[40px] text-gray-500 py-[33px] relative left-[48%]  "></i>
-        </section>
-        <section class="w-[90%] mx-auto flex justify-between relative top-[50px]  ">
-            <p class="text-gray-500 text-[14px] pt-[6px]">logout</p>
-            <p class="text-gray-500 text-[14px] pt-[7px]">&#169Icodethis All Rights Reserved</p>
-            <span>
-                <h2 class="text-black font-bold text-[20px]">12,588</23>
-                    <p class="text-gray-500 font-[100] text-[14px]">Projects completed</p>
-            </span>
-        </section>
+            <div class="relative right-[70px] top-[60px] group ">
+                <button class="w-[150px]  py-[7px] rounded-full font-bold  bg-white  hover:bg-gray-100 hover:shadow-md pl-3" id="menu-btn">sort <i class="fa-solid fa-chevron-down pl-9"></i></button>
+                <div class="bg-white invisible list-unactive py-[15px] px-[20px] rounded-lg mt-[15px] " id="menu">
+                    <ul class="" >
+                        <li class="font-bold text-[14px] cursor-pointer"><i class="fa-regular fa-calendar-days text-[20px] pr-[7px]"></i> Sort by Date</li>
+                        <li class="font-bold text-[14px] cursor-pointer pt-[18px]"><i class="fa-regular fa-a font-bold text-[20px] pr-[7px]"></i> Sort Alphabetically</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <footer class="relative top-[230px] left-[70px] flex justify-between w-[620px]">
+            <button class="bg-blue-400 text-[14px] rounded-full text-white px-[10px] py-[13px]">
+                <i class="fa-solid fa-file-import text-[20px]"></i>
+                Import your Data
+            </button>
+            <ul class="flex pt-4 text-gray-500 group-focus:block">
+                <li class="flex"> <div class="w-[5px] mx-[5px] bg-gray-500 h-[5px] mt-3 rounded-full"></div>About</li>
+                <li class="flex"> <div class="w-[5px] mx-[5px] bg-gray-500 h-[5px] mt-3 rounded-full"></div>Privacy</li>
+                <li class="flex"> <div class="w-[5px] mx-[5px] bg-gray-500 h-[5px] mt-3 rounded-full"></div> Terms</li>
+                <li class="flex"><div class="w-[5px] mx-[5px] bg-gray-500 h-[5px] mt-3 rounded-full"></div> Software and liscenses</li>
+                <li class="flex"> <div class="w-[5px] mx-[5px] bg-gray-500h-[5px] mt-3 rounded-full"></div>English</li>
+            </ul>
+        </footer>
+
     </main>
+
 </body>
 
 </html>
+
+<script>
+    const nav = document.getElementById('menu')
+    const btn = document.getElementById('menu-btn')
+    
+    btn.addEventListener('click', () => {
+  btn.classList.toggle('open')
+  nav.classList.toggle('visible')
+  nav.classList.toggle('invisible')
+})
+</script>
